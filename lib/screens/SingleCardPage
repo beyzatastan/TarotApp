@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+
+class SingleCardPage extends StatefulWidget {
+  const SingleCardPage({super.key});
+
+  @override
+  State<SingleCardPage> createState() => _SingleCardPageState();
+}
+
+class _SingleCardPageState extends State<SingleCardPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Kart Açılımı'),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Kartınızı seçmek üzeresiniz...',
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(height: 30),
+          Image.asset(
+            'assets/card_back.png', // Kartın arka yüzü için bir görsel ekleyin.
+            height: 200,
+          ),
+          SizedBox(height: 30),
+          ElevatedButton(
+            onPressed: () {
+              // Kartı çevirme işlevi buraya eklenecek.
+              print('Kart çevriliyor...');
+            },
+            child: Text('Kartı Çevir'),
+          ),
+        ],
+      ),
+    );
+  }
+}

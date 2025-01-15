@@ -1,4 +1,5 @@
 import 'package:cardsapp/screens/HomePage.dart';
+import 'package:cardsapp/screens/SingleCardPage';
 import 'package:cardsapp/utils/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -148,7 +149,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const HomePage(),
+                  builder: (context) =>  HomePage(),
                 ),
               );
             },

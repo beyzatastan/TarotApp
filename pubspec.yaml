@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   smooth_page_indicator: ^1.0.0
+  flutter_svg: ^1.0.0
+  flutter_slidable: ^3.1.2
 
 dev_dependencies:
   flutter_test:
@@ -49,20 +51,112 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
   assets:
     - lib/assets/images/kart.png
     - lib/assets/images/wallpaper.png
+    - lib/assets/icons/morMenu.svg 
+    - lib/assets/icons/griMenu.svg 
+    - lib/assets/icons/morMain.svg 
+    - lib/assets/icons/griMain.svg 
+    - lib/assets/icons/morTarot.svg 
+    - lib/assets/icons/griTarot.svg 
+    - lib/assets/icons/morGecmis.svg 
+    - lib/assets/icons/griGecmis.svg 
+    - lib/assets/images/kartlar/adalet.png
+    - lib/assets/images/kartlar/araba.png
+    - lib/assets/images/kartlar/asiklar.png
+    - lib/assets/images/kartlar/asilanAdam.png
+    - lib/assets/images/kartlar/ay.png
+    - lib/assets/images/kartlar/aziz.png
+    - lib/assets/images/kartlar/azize.png
+    - lib/assets/images/kartlar/buyucu.png
+    - lib/assets/images/kartlar/degnek-altilisi.png
+    - lib/assets/images/kartlar/degnek-asi.png
+    - lib/assets/images/kartlar/degnek-beslisi.png
+    - lib/assets/images/kartlar/degnek-dokuzlusu.png
+    - lib/assets/images/kartlar/degnek-dortlusu.png
+    - lib/assets/images/kartlar/degnek-ikilisi.png
+    - lib/assets/images/kartlar/degnek-krali.png
+    - lib/assets/images/kartlar/degnek-kralicesi.png
+    - lib/assets/images/kartlar/degnek-onlusu.png
+    - lib/assets/images/kartlar/degnek-prensi.png
+    - lib/assets/images/kartlar/degnek-sekizlisi.png
+    - lib/assets/images/kartlar/degnek-sovalyesi.png
+    - lib/assets/images/kartlar/degnek-uclusu.png
+    - lib/assets/images/kartlar/degnek-yedilisi.png
+    - lib/assets/images/kartlar/denge.png
+    - lib/assets/images/kartlar/dunya.png
+    - lib/assets/images/kartlar/ermis.png
+    - lib/assets/images/kartlar/guc.png
+    - lib/assets/images/kartlar/gunes.png
+    - lib/assets/images/kartlar/imparator.png
+    - lib/assets/images/kartlar/imparatorice.png
+    - lib/assets/images/kartlar/joker.png
+    - lib/assets/images/kartlar/kader.png
+    - lib/assets/images/kartlar/kilic-altilisi.png
+    - lib/assets/images/kartlar/kilic-asi.png
+    - lib/assets/images/kartlar/kilic-beslisi.png
+    - lib/assets/images/kartlar/kilic-dokuzlusu.png
+    - lib/assets/images/kartlar/kilic-dortlusu.png
+    - lib/assets/images/kartlar/kilic-ikilisi.png
+    - lib/assets/images/kartlar/kilic-krali.png
+    - lib/assets/images/kartlar/kilic-kralicesi.png
+    - lib/assets/images/kartlar/kilic-onlusu.png
+    - lib/assets/images/kartlar/kilic-prensi.png
+    - lib/assets/images/kartlar/kilic-sekizlisi.png
+    - lib/assets/images/kartlar/kilic-sovalyesi.png
+    - lib/assets/images/kartlar/kilic-uclusu.png
+    - lib/assets/images/kartlar/kilic-yedilisi.png
+    - lib/assets/images/kartlar/kule.png
+    - lib/assets/images/kartlar/kupa-altilisi.png
+    - lib/assets/images/kartlar/kupa-asi.png
+    - lib/assets/images/kartlar/kupa-beslisi.png
+    - lib/assets/images/kartlar/kupa-dokuzlusu.png
+    - lib/assets/images/kartlar/kupa-dortlusu.png
+    - lib/assets/images/kartlar/kupa-ikilisi.png
+    - lib/assets/images/kartlar/kupa-krali.png
+    - lib/assets/images/kartlar/kupa-kralicesi.png
+    - lib/assets/images/kartlar/kupa-onlusu.png
+    - lib/assets/images/kartlar/kupa-prensi.png
+    - lib/assets/images/kartlar/kupa-sekizlisi.png
+    - lib/assets/images/kartlar/kupa-sovalyesi.png
+    - lib/assets/images/kartlar/kupa-uclusu.png
+    - lib/assets/images/kartlar/kupa-yedilisi.png
+    - lib/assets/images/kartlar/mahkeme.png
+    - lib/assets/images/kartlar/olum.png
+    - lib/assets/images/kartlar/seytan.png
+    - lib/assets/images/kartlar/tilsim-altilisi.png
+    - lib/assets/images/kartlar/tilsim-asi.png
+    - lib/assets/images/kartlar/tilsim-beslisi.png
+    - lib/assets/images/kartlar/tilsim-dokuzlusu.png
+    - lib/assets/images/kartlar/tilsim-dortlusu.png
+    - lib/assets/images/kartlar/tilsim-ikilisi.png
+    - lib/assets/images/kartlar/tilsim-krali.png
+    - lib/assets/images/kartlar/tilsim-kralicesi.png
+    - lib/assets/images/kartlar/tilsim-onlusu.png
+    - lib/assets/images/kartlar/tilsim-prensi.png
+    - lib/assets/images/kartlar/tilsim-sekizlisi.png
+    - lib/assets/images/kartlar/tilsim-sovalyesi.png
+    - lib/assets/images/kartlar/tilsim-uclusu.png
+    - lib/assets/images/kartlar/tilsim-yedilisi.png
+    - lib/assets/images/kartlar/yildiz.png
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  fonts:
+    - family: CinzelDecorative
+      fonts:
+        - asset: lib/assets/fonts/CinzelDecorative-Bold.ttf   
 
+    - family: Poppins
+      fonts:
+        - asset: lib/assets/fonts/Poppins-Medium.ttf  
+
+    - family: PlayfairDisplay
+      fonts:
+        - asset: lib/assets/fonts/PlayfairDisplay-Bold.ttf  
+        
+        
+ 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
