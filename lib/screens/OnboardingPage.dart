@@ -1,5 +1,4 @@
 import 'package:cardsapp/screens/HomePage.dart';
-import 'package:cardsapp/screens/SingleCardPage';
 import 'package:cardsapp/utils/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +12,8 @@ class OnboardingPage extends StatefulWidget {
 }
 
 class _OnboardingPageState extends State<OnboardingPage> {
-  final PageController _pageController = PageController(); // Sayfaları kontrol etmek için
+  final PageController _pageController =
+      PageController(); // Sayfaları kontrol etmek için
   final int _totalPages = 3; // Toplam sayfa sayısı
 
   @override
@@ -31,13 +31,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   buildPage(
                     image: CupertinoIcons.moon_fill,
                     title: "Hoş Geldin",
-                    description: "Zamanın ötesindeki gücünü hisset, kaderin sana ne fısıldıyor?",
+                    description:
+                        "Zamanın ötesindeki gücünü hisset, kaderin sana ne fısıldıyor?",
                     color: AppColors.secondaryColor,
                   ),
                   buildPage(
                     image: CupertinoIcons.flame_fill,
                     title: "Uyan",
-                    description: "Kartlar senin için konuşacak, tek yapman gereken dinlemek.",
+                    description:
+                        "Kartlar senin için konuşacak, tek yapman gereken dinlemek.",
                     color: AppColors.secondaryColor,
                   ),
                   // Son sayfada buton ekliyoruz
@@ -149,7 +151,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) =>  HomePage(),
+                  builder: (context) => HomePage(),
                 ),
               );
             },

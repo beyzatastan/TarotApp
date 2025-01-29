@@ -154,6 +154,10 @@ flutter:
     - family: PlayfairDisplay
       fonts:
         - asset: lib/assets/fonts/PlayfairDisplay-Bold.ttf  
+
+    - family: LibreBaskerville
+      fonts:
+        - asset: lib/assets/fonts/LibreBaskerville-Regular.ttf  
         
         
  
